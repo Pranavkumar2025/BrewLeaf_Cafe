@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-coffee-900: #261B14;
+  --color-coffee: #3B2A20;
+  --color-coffee-light: #5A4335;
+  --color-coffee-muted: #8C7566;
+  
+  --color-cream: #F5EBDD;
+  --color-cream-light: #FAF6F0;
+  --color-cream-dark: #EADBC8;
+  
+  --color-leaf: #4F7A4B;
+  --color-leaf-dark: #3D5E3A;
+  --color-leaf-light: #F0F5EF;
+  
+  --color-amber-accent: #E2A33B;
+  --color-amber-accent-dark: #C98B26;
+  --color-amber-accent-light: #FBF3E4;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #FAF6F0;
+  color: #3B2A20;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EBDD;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B2A20;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5A4335;
+}
+
+/* Traditional Handcrafted Wooden Café Tabletop */
+.traditional-wood-table {
+  background-color: #2F1D13;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 138px,
+      rgba(15, 9, 6, 0.5) 139px,
+      rgba(15, 9, 6, 0.8) 140px,
+      rgba(95, 62, 42, 0.3) 141px,
+      transparent 142px
+    ),
+    radial-gradient(
+      ellipse at 50% 40%,
+      rgba(75, 48, 32, 0.9) 0%,
+      rgba(47, 29, 19, 0.95) 60%,
+      rgba(24, 14, 9, 0.98) 100%
+    );
+  box-shadow: 
+    inset 0 4px 14px rgba(255, 255, 255, 0.1),
+    inset 0 -10px 28px rgba(0, 0, 0, 0.7),
+    0 30px 80px -20px rgba(20, 11, 7, 0.75),
+    0 12px 25px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* Traditional Rosewood Table Bed with Tarkashi (Brass Wire Inlay) Aesthetic */
+.traditional-tarkashi-bed {
+  background: 
+    radial-gradient(
+      ellipse at center,
+      rgba(58, 36, 24, 0.95) 0%,
+      rgba(38, 23, 15, 0.98) 70%,
+      rgba(25, 14, 9, 1) 100%
+    );
+  box-shadow: 
+    inset 0 0 25px rgba(0, 0, 0, 0.8),
+    inset 0 0 0 1px rgba(226, 163, 59, 0.35),
+    0 15px 40px -10px rgba(0, 0, 0, 0.6);
+}
